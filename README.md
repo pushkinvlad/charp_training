@@ -1,2 +1,2 @@
-# charp_training
+# csharp_training
 training repo
