@@ -7,10 +7,8 @@ namespace WebAddressbookTests
         [Test]
         public void CreateNewContactTest()
         {
-            OpenHomePage();
-            Login(new AccountData("admin", "secret"));
-            AddNewContact(new ContactData("Vlad", "Pushkin", "Arcadia"));
-            Logout();
+            app.Contacts.AddNewContact(new ContactData("Vlad", "Pushkin", "Arcadia"));
+            app.Auth.Logout();
         }
     }
 }
